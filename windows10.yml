@@ -4,6 +4,8 @@ services:
     container_name: windows
     environment:
       VERSION: "10"
+      USERNAME: ${WINDOWS_USERNAME}
+      PASSWORD: ${WINDOWS_PASSWORD}
       RAM_SIZE: "3G"
       CPU_CORES: "2"
       DISK_SIZE: "32G"
